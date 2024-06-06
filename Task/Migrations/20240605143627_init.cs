@@ -10,14 +10,14 @@ namespace Task.Migrations
         {
             migrationBuilder.AddColumn<string>(
                name: "Color",
-               table: "Product",
+               table: "Products",
                type: "nvarchar(10)",
                maxLength: 10,
                nullable: true);
 
             migrationBuilder.AddColumn<decimal>(
                 name: "Price",
-                table: "Product",
+                table: "Products",
                 type: "numeric(12, 2)",
                 nullable: false,
                 defaultValue: 0m);
@@ -27,11 +27,11 @@ namespace Task.Migrations
         {
             migrationBuilder.DropColumn(
                  name: "Color",
-                 table: "Product");
+                 table: "Products");
 
             migrationBuilder.DropColumn(
                 name: "Price",
-                table: "Product");
+                table: "Products");
         }
     }
 }
